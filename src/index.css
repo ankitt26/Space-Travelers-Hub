@@ -35,3 +35,24 @@ nav {
   justify-self: flex-end;
   margin-left: 30rem;
 }
+
+.nav-list {
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
+.link:focus {
+  text-decoration: underline;
+}
+
+.missions-li {
+  border-right: 1px solid grey;
+}
