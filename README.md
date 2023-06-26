@@ -7,7 +7,7 @@
   - [🛠️ Built With ](#️-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [� Getting Started ](#-getting-started-)
+  - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)
@@ -170,7 +170,7 @@ $ npm start
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ankitt26/Math-magicians/issues).
+Feel free to check the [issues page](https://github.com/ankitt26/Space-Travelers-Hub/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -194,6 +194,6 @@ Feel free to check the [issues page](https://github.com/ankitt26/Math-magicians/
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/ankitt26/Math-magicians/blob/develop/LICENSE) licensed.
+This project is [MIT](https://github.com/ankitt26/Space-Travelers-Hub/blob/develop/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
