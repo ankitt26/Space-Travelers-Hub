@@ -16,12 +16,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.sth-header {
+  justify-self: flex-start;
+  margin-left: 1rem;
+}
+
+.logo {
+  height: 4rem;
+}
+
+nav {
+  justify-self: flex-end;
+  margin-left: 30rem;
 }
