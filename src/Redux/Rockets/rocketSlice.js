@@ -16,27 +16,40 @@ const rocketSlice = createSlice({
 
   initialState: {
     rocketData: [],
+    isLoading: false,
+    error: null,
   },
 
   reducers: {},
 
   extraReducers: (builder) => {
-    builder
-      .addCase(fetchData.fulfilled, (state, action) => {
-        const rockets = action.payload;
+    builder.addCase(fetchData.pending, (state) => ({
+      ...state,
+      isLoading: true,
+    }));
 
-        const newRocketsData = rockets.map((element) => ({
-          id: element.id,
-          name: element.rocket_name,
-          type: element.rocket_type,
-          flickr_images: element.flickr_images[0],
-        }));
+    builder.addCase(fetchData.rejected, (state) => ({
+      ...state,
+      error: true,
+      isLoading: false,
+    }));
 
-        return {
-          ...state,
-          rocketData: newRocketsData,
-        };
-      });
+    builder.addCase(fetchData.fulfilled, (state, action) => {
+      const rockets = action.payload;
+
+      const newRocketsData = rockets.map((element) => ({
+        id: element.id,
+        name: element.rocket_name,
+        type: element.rocket_type,
+        flickr_images: element.flickr_images[0],
+      }));
+
+      return {
+        ...state,
+        rocketData: newRocketsData,
+        isLoading: false,
+      };
+    });
   },
 });
 
