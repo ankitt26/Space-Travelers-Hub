@@ -1,0 +1,39 @@
+.rocket {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 90%;
+  height: 180px;
+  margin: 0 3%;
+  padding: 20px 2%;
+}
+
+.image {
+  width: 300px;
+  height: 200px;
+}
+
+.details {
+  width: 73%;
+  margin-left: 10px;
+}
+
+.name {
+  margin: 0;
+  margin-bottom: -10px;
+}
+
+.description {
+  max-width: 850px;
+}
+
+.button {
+  width: 140px;
+  height: 35px;
+  padding: 2px 5px;
+  color: #fff;
+  background-color: rgb(33, 169, 237);
+  border: none;
+  border-radius: 5px;
+}
