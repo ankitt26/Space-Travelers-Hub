@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import './App.css';
-import NavLink from './components/NavLink';
+import Navbar from './components/Navbar';
 import Profile from './components/Profile';
 import Rockets from './components/Rockets';
 import Missions from './components/Missions';
@@ -16,7 +16,7 @@ function App() {
   }, [dispatch]);
   return (
     <>
-      <NavLink />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Rockets />} />
         <Route path="/Profile" element={<Profile />} />
