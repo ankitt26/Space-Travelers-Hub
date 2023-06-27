@@ -36,11 +36,11 @@ li {
 
 .link {
   text-decoration: none;
-  margin: 0 12px;
-  color: rgb(0, 0, 0);
+  margin: 0 16px;
+  color: rgb(33, 169, 237);
 }
 
 .br {
-  color: black;
-  font-weight: 600;
+  color: rgb(77, 74, 74);
+  font-weight: 500;
 }

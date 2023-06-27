@@ -27,10 +27,13 @@
 .name {
   margin: 0;
   margin-bottom: -10px;
+  font-family: "Belanosima", sans-serif;
+  font-weight: 200;
 }
 
 .description {
   max-width: 850px;
+  font-family: "Nunito", sans-serif;
 }
 
 .button {
@@ -41,4 +44,6 @@
   background-color: rgb(33, 169, 237);
   border: none;
   border-radius: 5px;
+  font-size: 15px;
+  font-family: "Nunito", sans-serif;
 }
