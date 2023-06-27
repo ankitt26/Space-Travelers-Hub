@@ -40,7 +40,7 @@ const rocketSlice = createSlice({
       const newRocketsData = rockets.map((element) => ({
         id: element.id,
         name: element.rocket_name,
-        type: element.rocket_type,
+        description: element.description,
         flickr_images: element.flickr_images[0],
       }));
 
