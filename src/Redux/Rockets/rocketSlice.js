@@ -1,39 +1,44 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-
 import axios from 'axios';
 
-const fetchdata = createAsyncThunk('fetching rockets', async () => {
-  const response = await axios.get('https://api.spacexdata.com/v3/rockets');
-  const result = response.data;
-  return result;
+const fetchData = createAsyncThunk('fetching rockets', async () => {
+  try {
+    const response = await axios.get('https://api.spacexdata.com/v3/rockets');
+    const result = response.data;
+    return result;
+  } catch (error) {
+    throw new Error('There is an error in fetching data from the API');
+  }
 });
 
 const rocketSlice = createSlice({
   name: 'rockets',
-  initialState: { rocketdata: [] },
+
+  initialState: {
+    rocketData: [],
+  },
+
   reducers: {},
 
   extraReducers: (builder) => {
-    builder.addCase(fetchdata.fulfilled, (state, action) => {
-      const Rock = action.payload;
-      const newdata = [];
-      Rock.forEach((element) => {
-        const rocket11 = {
+    builder
+      .addCase(fetchData.fulfilled, (state, action) => {
+        const rockets = action.payload;
+
+        const newRocketsData = rockets.map((element) => ({
           id: element.id,
           name: element.rocket_name,
           type: element.rocket_type,
           flickr_images: element.flickr_images[0],
-        };
+        }));
 
-        newdata.push(rocket11);
+        return {
+          ...state,
+          rocketData: newRocketsData,
+        };
       });
-      return {
-        ...state,
-        rocketdata: newdata,
-      };
-    });
   },
 });
 
-export { fetchdata };
+export { fetchData };
 export default rocketSlice.reducer;
