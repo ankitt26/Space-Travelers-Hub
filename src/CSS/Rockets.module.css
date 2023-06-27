@@ -1,3 +1,7 @@
+.rocket_page {
+  margin-bottom: 40px;
+}
+
 .rocket {
   display: flex;
   flex-direction: row;
@@ -12,6 +16,7 @@
 .image {
   width: 300px;
   height: 200px;
+  border-radius: 5px;
 }
 
 .details {
