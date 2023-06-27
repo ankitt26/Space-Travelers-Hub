@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-family: "Nunito", sans-serif;
+  border-bottom: 2px solid rgb(222, 215, 215);
+  width: 92%;
+}
+
+.title {
+  justify-self: flex-start;
+  margin-left: 1rem;
+  font-family: "Belanosima", sans-serif;
+}
+
+.logo {
+  height: 4rem;
+  margin-left: -35px;
+}
+
+nav {
+  justify-self: flex-end;
+  margin-left: 30rem;
+}
+
+.nav_list {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  margin: 0 12px;
+  color: rgb(0, 0, 0);
+}
+
+.br {
+  color: black;
+  font-weight: 600;
+}
