@@ -10,8 +10,8 @@ function App() {
     <>
       <NavLink />
       <Routes>
+        <Route path="/" element={<Rockets />} />
         <Route path="/Profile" element={<Profile />} />
-        <Route path="/Rockets" element={<Rockets />} />
         <Route path="/Missions" element={<Missions />} />
       </Routes>
     </>
