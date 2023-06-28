@@ -9,7 +9,7 @@ function NavLink() {
       <nav className="navigation">
         <ul className="nav-list">
           <li>
-            <Link className="link" to="/Rockets">Rockets</Link>
+            <Link className="link" to="/">Rockets</Link>
           </li>
           <li>
             <Link className="link missions-li" to="/Missions">Missions</Link>
