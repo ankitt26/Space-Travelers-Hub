@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
 import styles from '../CSS/Rockets.module.css';
+import RocketButton from './RocketButton';
 
 const Rockets = () => {
   const data = useSelector((state) => state.Rockets.rocketData);
@@ -9,9 +10,7 @@ const Rockets = () => {
       <div className={styles.details}>
         <h2 className={styles.name}>{rocket.name}</h2>
         <p className={styles.description}>{rocket.description}</p>
-        <button className={styles.button} type="submit">
-          Reserve Rocket
-        </button>
+        <RocketButton />
       </div>
     </main>
   ));
