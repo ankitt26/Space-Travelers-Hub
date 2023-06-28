@@ -5,9 +5,9 @@ import RocketButton from './RocketButton';
 const Rockets = () => {
   const data = useSelector((state) => state.Rockets.rocketData);
   const display = data.map((rocket) => {
-    let badgeClass = 'badge-none';
+    let badgeClass = styles.badge_none;
     if (rocket.reserved === true) {
-      badgeClass = 'badge';
+      badgeClass = styles.badge;
     }
     return (
       <main className={styles.rocket} key={rocket.id}>

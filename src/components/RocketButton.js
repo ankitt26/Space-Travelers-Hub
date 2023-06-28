@@ -5,8 +5,10 @@ import { reserve } from '../Redux/Rockets/rocketSlice';
 
 const RocketButton = ({ Id, reserved }) => {
   let buttonText = 'Reserve Rocket';
+  let btnClass = styles.button;
   if (reserved === true) {
     buttonText = 'Cancel Reservation';
+    btnClass = styles.button_cancel;
   }
   const dispatch = useDispatch();
 
@@ -16,7 +18,7 @@ const RocketButton = ({ Id, reserved }) => {
   };
   return (
     <div>
-      <button className={styles.button} id={Id} type="submit" onClick={onclick}>
+      <button className={btnClass} id={Id} type="submit" onClick={onclick}>
         {buttonText}
       </button>
     </div>
