@@ -4,7 +4,6 @@ import styles from '../CSS/Rockets.module.css';
 import { reserve } from '../Redux/Rockets/rocketSlice';
 
 const RocketButton = ({ Id, reserved }) => {
-  console.log(reserved);
   let buttonText = 'Reserve Rocket';
   if (reserved === true) {
     buttonText = 'Cancel Reservation';
@@ -26,10 +25,10 @@ const RocketButton = ({ Id, reserved }) => {
 
 RocketButton.propTypes = {
   Id: PropTypes.number.isRequired,
-  reserved: PropTypes.string,
+  reserved: PropTypes.bool,
 };
 
 RocketButton.defaultProps = {
-  reserved: 'false',
+  reserved: false,
 };
 export default RocketButton;
