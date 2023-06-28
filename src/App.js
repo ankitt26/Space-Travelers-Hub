@@ -1,8 +1,10 @@
+import './App.css';
+import './index.css';
 import { Route, Routes } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import './App.css';
 import Navbar from './components/Navbar';
+import { getMissions } from './Redux/missions/missionsSlice';
 import Profile from './components/Profile';
 import Rockets from './components/Rockets';
 import Missions from './components/Missions';
@@ -13,6 +15,7 @@ function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchData());
+    dispatch(getMissions());
   }, [dispatch]);
   return (
     <>

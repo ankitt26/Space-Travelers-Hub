@@ -1,0 +1,33 @@
+.missions-li {
+  border-right: 1px solid grey;
+}
+
+.mission {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1fr;
+  align-items: flex-start;
+  border: 1px solid rgb(209, 207, 207);
+}
+
+.missions {
+  margin: auto;
+  width: 90%;
+}
+
+.mission-name,
+.description,
+.status,
+.join-leave {
+  border-right: 1px solid rgb(209, 207, 207);
+  height: 100%;
+  padding: 2%;
+}
+
+.join-leave {
+  padding: 40% 25%;
+}
+
+.join-btn {
+  padding: 1rem;
+  margin: auto;
+}
