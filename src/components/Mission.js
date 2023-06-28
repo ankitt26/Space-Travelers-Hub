@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { joinMission, leaveMission } from '../Redux/missions/missionsSlice';
 
-// mission_name, mission_id, description
 function Mission({
   mission_id, mission_name, description, reserved,
 }) {
@@ -27,7 +26,8 @@ function Mission({
         <p>{description}</p>
       </div>
       <div className="status">
-        <p>{reserved ? 'Active Member' : 'Not a Member'}</p>
+        {reserved === true && <p>Active Member</p>}
+        {reserved === false && <p>Not a Member</p>}
       </div>
       <div className="join-leave">
         <button key={mission_id} type="button" className="join-btn" onClick={(e) => handleClick(e, mission_id, reserved)}>{reserved ? 'Leave Mission' : 'Join Mission'}</button>
