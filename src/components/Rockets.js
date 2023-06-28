@@ -10,7 +10,7 @@ const Rockets = () => {
       <div className={styles.details}>
         <h2 className={styles.name}>{rocket.name}</h2>
         <p className={styles.description}>{rocket.description}</p>
-        <RocketButton Id={rocket.id} />
+        <RocketButton Id={rocket.id} reserved={rocket.reserved} />
       </div>
     </main>
   ));
