@@ -1,17 +1,8 @@
-import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { getMissions } from '../Redux/missions/missionsSlice';
+import { useSelector } from 'react-redux';
 import Mission from './Mission';
 
 function Missions() {
   const { missions, isLoading } = useSelector((state) => state.missions);
-
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(getMissions());
-  }, [dispatch]);
-
   if (isLoading) {
     return (
       <div>
