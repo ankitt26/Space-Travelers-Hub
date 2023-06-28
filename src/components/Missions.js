@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
 import Mission from './Mission';
+import styles from '../CSS/Missions.module.css';
 
 function Missions() {
   const { missions, isLoading } = useSelector((state) => state.missions);
@@ -16,8 +17,13 @@ function Missions() {
 
   return (
     <>
-      <h1>Missions Page</h1>
-      <div className="missions">
+      <div className={styles.missions}>
+        <div className={styles.headings}>
+          <div className={styles.heading}>Mission</div>
+          <div className={styles.heading}>Description</div>
+          <div className={styles.heading}>Status</div>
+          <div className={styles.heading} />
+        </div>
         {
           missions.map((mission) => (
             <Mission

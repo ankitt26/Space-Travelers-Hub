@@ -1,4 +1,4 @@
-.missions-li {
+/* .missions-li {
   border-right: 1px solid grey;
 }
 
@@ -12,6 +12,19 @@
 .missions {
   margin: auto;
   width: 90%;
+}
+
+.headings {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1fr;
+  border-right: 1px solid rgb(209, 207, 207);
+  border-left: 1px solid rgb(209, 207, 207);
+}
+
+.heading {
+  border-right: 1px solid rgb(209, 207, 207);
+  border-top: 1px solid rgb(209, 207, 207);
+  padding: 1%;
 }
 
 .mission-name,
@@ -30,4 +43,4 @@
 .join-btn {
   padding: 1rem;
   margin: auto;
-}
+} */
