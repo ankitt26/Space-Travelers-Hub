@@ -1,5 +1,5 @@
 .MyProfile {
-  width: 85%;
+  width: 93%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -8,7 +8,7 @@
 }
 
 .mission_section {
-  width: 46%;
+  width: 48%;
   padding: 10px;
 }
 

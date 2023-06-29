@@ -6,7 +6,7 @@
   margin: 0 auto;
   font-family: "Nunito", sans-serif;
   border-bottom: 2px solid rgb(222, 215, 215);
-  width: 92%;
+  width: 94%;
 }
 
 .title {
@@ -22,7 +22,7 @@
 
 nav {
   justify-self: flex-end;
-  margin-left: 35rem;
+  margin-left: 41rem;
 }
 
 .nav_list {
