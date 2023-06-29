@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyProfile component test 1`] = `
+<div>
+  <button
+    className="button"
+    onClick={[Function]}
+    type="submit"
+  >
+    Reserve Rocket
+  </button>
+</div>
+`;

@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyProfile component test 1`] = `
+<header
+  className="header"
+>
+  <img
+    alt="Logo"
+    className="logo"
+    src="planet.png"
+  />
+  <h1
+    className="title"
+  >
+    Space Travellers' Hub
+  </h1>
+  <nav
+    className="navigation"
+  >
+    <ul
+      className="nav_list"
+    >
+      <li>
+        <a
+          aria-current="page"
+          className="link active"
+          href="/"
+          onClick={[Function]}
+        >
+          Rockets
+        </a>
+      </li>
+      <li>
+        <a
+          className="link"
+          href="/Missions"
+          onClick={[Function]}
+        >
+          Missions
+        </a>
+      </li>
+      <li
+        className="br"
+      >
+        |
+      </li>
+      <li>
+        <a
+          className="link"
+          href="/MyProfile"
+          onClick={[Function]}
+        >
+          My Profile
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+`;
