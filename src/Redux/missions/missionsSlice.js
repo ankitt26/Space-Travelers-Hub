@@ -1,15 +1,15 @@
 /*eslint-disable*/
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import axios from "axios";
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import axios from 'axios';
 
 const initialState = {
   missions: [],
   isLoading: false,
 };
 
-const url = "https://api.spacexdata.com/v3/missions";
+const url = 'https://api.spacexdata.com/v3/missions';
 export const getMissions = createAsyncThunk(
-  "missions/getMissions",
+  'missions/getMissions',
   async () => {
     try {
       const response = await axios(url);
@@ -18,33 +18,29 @@ export const getMissions = createAsyncThunk(
       console.log(error);
       return error;
     }
-  }
+  },
 );
 
 const missionsSlice = createSlice({
-  name: "missions",
+  name: 'missions',
   initialState,
   reducers: {
     joinMission: (state, action) => {
       const { mission_id } = action.payload;
       return {
         ...state,
-        missions: state.missions.map((mission) =>
-          mission.mission_id === mission_id
-            ? { ...mission, reserved: true }
-            : mission
-        ),
+        missions: state.missions.map((mission) => (mission.mission_id === mission_id
+          ? { ...mission, reserved: true }
+          : mission)),
       };
     },
     leaveMission: (state, action) => {
       const { mission_id } = action.payload;
       return {
         ...state,
-        missions: state.missions.map((mission) =>
-          mission.mission_id === mission_id
-            ? { ...mission, reserved: false }
-            : mission
-        ),
+        missions: state.missions.map((mission) => (mission.mission_id === mission_id
+          ? { ...mission, reserved: false }
+          : mission)),
       };
     },
   },
@@ -54,13 +50,11 @@ const missionsSlice = createSlice({
     },
     [getMissions.fulfilled]: (state, action) => {
       const data = action.payload;
-      const newdata = data.map((mission) => {
-        return {
-          mission_id: mission.mission_id,
-          mission_name: mission.mission_name,
-          description: mission.description,
-        };
-      });
+      const newdata = data.map((mission) => ({
+        mission_id: mission.mission_id,
+        mission_name: mission.mission_name,
+        description: mission.description,
+      }));
       state.isLoading = false;
       state.missions = newdata;
     },

@@ -1,0 +1,88 @@
+.missions-li {
+  border-right: 1px solid grey;
+}
+
+.mission {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1fr;
+  align-items: flex-start;
+  border: 1px solid rgb(209, 207, 207);
+}
+
+.missions {
+  margin: 1rem auto auto auto;
+  width: 90%;
+}
+
+.headings {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1fr;
+  border-right: 1px solid rgb(209, 207, 207);
+  border-left: 1px solid rgb(209, 207, 207);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
+
+.heading {
+  border-right: 1px solid rgb(209, 207, 207);
+  border-top: 1px solid rgb(209, 207, 207);
+  padding: 0.35rem;
+}
+
+.mission_name,
+.description,
+.status,
+.join_leave {
+  border-right: 1px solid rgb(209, 207, 207);
+  height: 100%;
+  padding: 0.35rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.join_btn {
+  margin: auto;
+  border: 1.5px solid rgb(16, 12, 12);
+  background-color: rgba(255, 255, 255, 0);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 5px;
+  color: black;
+  padding: 0.5rem 1rem;
+}
+
+.leave_btn {
+  margin: auto;
+  border: 1.5px solid red;
+  color: red;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}
+
+.status,
+.join_leave {
+  display: flex;
+  align-items: center;
+}
+
+.not_member {
+  background-color: rgb(117, 117, 117);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 7px;
+  padding: 4%;
+  margin: auto;
+}
+
+.active_member {
+  background-color: rgb(81, 156, 177);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 7px;
+  padding: 4%;
+  margin: auto;
+}
