@@ -16,7 +16,7 @@ const Navbar = () => (
         </li>
         <li className={styles.br}>|</li>
         <li>
-          <NavLink className={styles.link} to="/Profile">My Profile</NavLink>
+          <NavLink className={styles.link} to="/MyProfile">My Profile</NavLink>
         </li>
       </ul>
     </nav>
