@@ -28,10 +28,9 @@
 **[Description]**
 
 The Space Travelers' Hub consists of Rockets, Missions, and the My Profile section.
+we will be working with the real live data from the SpaceX API. we build a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
 ## 🛠️ Built With <a name="built-with"></a>
-
-
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -45,9 +44,9 @@ React.js
 
 ### Key Features <a name="key-features"></a>
 
--  Rockets section.
--  Missions section.
--  My Profile section.
+- The Rockets section displays a list of all available SpaceX rockets. Users can book each rocket by clicking the reservation button or cancel the previously made booking.
+- The Missions section displays a list of current missions along with their brief description and participation status. There is also a button next to each mission that allows users to join the selected mission or leave the mission the user joined earlier.
+- The My Profile section displays all reserved rockets and space missions.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -63,14 +62,11 @@ React.js
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
-
 
 Example command:
 
@@ -78,12 +74,10 @@ Example command:
 1.use a browser
 2.use cable internet
 ```
- 
 
 ### Setup
 
 Clone this repository to your desired folder:
-
 
 Example commands:
 
@@ -93,11 +87,9 @@ Example commands:
 
 ```
 
-
 ### Install
 
 Install this project with:
-
 
 Example command:
 
@@ -105,11 +97,9 @@ Example command:
   npm install
 ```
 
-
 ### Usage
 
 To run the project, execute the following command:
-
 
 Example command:
 
@@ -117,11 +107,9 @@ Example command:
  npm run start
 ```
 
-
 ### Run tests
 
 To run tests, run the following command:
-
 
 Example command:
 
@@ -130,7 +118,6 @@ npx hint .
 npx eslint .
 ```
 
-
 ### Deployment
 
 ```
@@ -138,10 +125,7 @@ $ npm run build
 $ npm start
 ```
 
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- AUTHORS -->
 
@@ -154,15 +138,18 @@ $ npm start
 - LinkedIn: [ankit26k](https://www.linkedin.com/in/ankit26k/)
 
 
+👤 **Sungabanja Thawethe**
+
+- GitHub: [@sunga12](https://github.com/sunga12)
+- Twitter: [@OfficialAseT](https://twitter.com/OfficialAseT)
+- LinkedIn: [Sungabanja Thawethe](https://www.linkedin.com/in/sungabanja-thawethe-b3419b142/)
+  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🔭 Future Features
 
- ## 🔭 Future Features
-
-- Add the functionality for the app.🚀
+- Add user login page.
 - Add the testing using react testing library💯
-- Add the final touches for the styling👌
-
 
 <!-- CONTRIBUTING -->
 
