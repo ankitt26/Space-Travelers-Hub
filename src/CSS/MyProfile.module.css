@@ -1,0 +1,41 @@
+.MyProfile {
+  width: 91%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-family: "Nunito", sans-serif;
+}
+
+.mission_section {
+  width: 48%;
+  padding: 10px;
+}
+
+.rocket_section {
+  width: 47%;
+  min-height: 200px;
+  padding: 10px;
+}
+
+.heading2 {
+  font-size: 25px;
+  font-family: "Nunito", sans-serif;
+  margin: 4px 0 7px;
+}
+
+.reserved {
+  border: 2px solid rgb(201, 200, 200);
+  border-radius: 5px;
+}
+
+.rockets {
+  border-bottom: 2px solid rgb(201, 200, 200);
+  padding: 18px 15px;
+  margin: 0;
+  color: rgb(58, 54, 54);
+}
+
+.rockets:last-child {
+  border-bottom: none;
+}

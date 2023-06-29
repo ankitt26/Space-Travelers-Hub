@@ -1,0 +1,78 @@
+.rocket_page {
+  margin-bottom: 40px;
+}
+
+.rocket {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 90%;
+  height: 180px;
+  margin: 0 3%;
+  padding: 20px 2%;
+}
+
+.image {
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.details {
+  width: 73%;
+  margin-left: 10px;
+}
+
+.name {
+  margin: 0;
+  margin-bottom: -10px;
+  font-family: "Belanosima", sans-serif;
+  font-weight: 200;
+}
+
+.description {
+  max-width: 850px;
+  font-family: "Nunito", sans-serif;
+}
+
+.button {
+  width: 140px;
+  height: 35px;
+  padding: 2px 5px;
+  color: #fff;
+  background-color: rgb(33, 169, 237);
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Nunito", sans-serif;
+}
+
+.button_cancel {
+  width: 165px;
+  height: 35px;
+  padding: 2px 5px;
+  color: #fff;
+  background-color: rgb(186 193 195);
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Nunito", sans-serif;
+}
+
+.badge_none {
+  display: none;
+}
+
+.badge {
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  background-color: rgb(234, 122, 152);
+  border-radius: 3px;
+  padding: 0 8px;
+  position: relative;
+  bottom: 1px;
+  margin-right: 8px;
+  letter-spacing: 0.08rem;
+}
