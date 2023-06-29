@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyProfile component test 1`] = `
+<div
+  className="mission"
+>
+  <div
+    className="mission_name"
+  >
+    <p />
+  </div>
+  <div
+    className="description"
+  >
+    <p />
+  </div>
+  <div
+    className="status"
+  >
+    <p
+      className="not_member"
+    >
+      NOT A MEMBER
+    </p>
+  </div>
+  <div
+    className="join_leave"
+  >
+    <button
+      className="join_btn"
+      onClick={[Function]}
+      type="button"
+    >
+      Join Mission
+    </button>
+  </div>
+</div>
+`;
