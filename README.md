@@ -7,6 +7,7 @@
   - [🛠️ Built With ](#️-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+    - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -52,11 +53,11 @@ React.js
 
 <!-- LIVE DEMO -->
 
-<!-- ## 🚀 Live Demo <a name="live-demo"></a>
+ ## 🚀 Live Demo <a name="live-demo"></a>
 
-> [🎉 see live ](https://Space-Travelers-Hub-ankitt26k.onrender.com/)
+> [🎉 see live ](https://ankitt-26k-space-travelers-hub.onrender.com/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p> 
 
 <!-- GETTING STARTED -->
 
